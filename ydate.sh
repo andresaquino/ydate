@@ -24,7 +24,7 @@ ayuda () { echo '
 # show help
 [ "$1" = "-h" -o "$1" = "--help" -o "$1" = "--ayuda" ] && ayuda && exit 0;
 
-. dateUtils.sh
+. $PWD/dateUtils.sh
 
 #leyendo opciones de linea comandos
 while getopts d: _opciones
