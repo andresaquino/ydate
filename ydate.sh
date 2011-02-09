@@ -21,11 +21,10 @@
 #                 integer day )
 # Returns:
 #   integer NumberDay
-#
-function getNumberDay () {
-  local year=${1}
-  local month=${2}
-  local day=${3}
+getNumberDay () {
+  local year=$((${1}/1))
+  local month=$((${2}/1))
+  local day=$((${3}/1))
   local number=
   
   # values in range year > 0 || month > 0 || day > 0 => exit 1
@@ -45,7 +44,7 @@ function getNumberDay () {
 # Returns:
 #   string dateCalculated
 # 
-function getDayOfNumber () {
+getDayOfNumber () {
   local number=${1}
   local year=
   local month=
@@ -89,12 +88,12 @@ do
       [ ${#days} -eq 0 ] && days=-1 
       ;;
     -h|--help)
-      echo -e "Usage: ydate [OPTIONS]..."
-      echo -e "Calculate a date in the timeline by taking +-N days as parameter"
-      echo -e "Mandatory arguments:"
-      echo -e "\t-d, --days=+N|-N                by default -1 day, otherwise +-N days"
-      echo -e "\t-h, --help                      show help"
-      echo -e "Report bugs to <petrohs(at) mail.com>"
+      echo "Usage: ydate [OPTIONS]..."
+      echo "Calculate a date in the timeline by taking +-N days as parameter"
+      echo "Mandatory arguments:"
+      echo "\t-d, --days=+N|-N                by default -1 day, otherwise +-N days"
+      echo "\t-h, --help                      show help"
+      echo "Report bugs to <petrohs(at) mail.com>"
       exit 0
       ;;
     *)
