@@ -16,23 +16,24 @@
 # getNumberDay
 # Get a number day taking the Gregorian Calendar as a baseline
 # Params:
-#   getNumberDay( integer year,
-#                 integer month,
-#                 integer day )
+#   getNumberDay( string nday )
 # Returns:
 #   integer NumberDay
 getNumberDay () {
-  local year=$((${1}/1))
-  local month=$((${2}/1))
-  local day=$((${3}/1))
+  local mday="${1}"
   local number=
+  
+  # better, get date and split internally, use bc to cast values
+  year=`echo ${mday} | cut -d'|' -f1 | bc`
+  month=`echo ${mday} | cut -d'|' -f2 | bc`
+  day=`echo ${mday} | cut -d'|' -f3 | bc`
   
   # values in range year > 0 || month > 0 || day > 0 => exit 1
   [ ${year} -le 0 -o ${month} -le 0 -o ${day} -le 0 ] && exit 1
 
   month=$(((month+9)%12))
   year=$((year-(month/10)))
-  number=$(((365*year) + (year/4) - (year/100) + (year/400) + (month*306 + 5)/10 + (day -1)))
+  number=$(((365*year) + (year/4) - (year/100) + (year/400) + (month*306+5)/10 + (day-1)))
 
   echo $number
 }
@@ -75,6 +76,7 @@ getDayOfNumber () {
 #   --days=-+N    move N days back or forward
 #   -h | --help   show help
 #
+days=0
 while [ $# -gt 0 ]
 do
   case ${1} in
@@ -98,8 +100,8 @@ do
       ;;
     *)
       # opcion por defecto (-1)
-      echo -e "Option not recognized, please check your parameters."
-      echo -e "ydate --help"
+      echo "Option not recognized, please check your parameters."
+      echo "ydate --help"
       exit 0
       ;;
   esac
@@ -107,12 +109,10 @@ do
 done
 
 # get current date
-nyear=`date '+%Y'`
-nmonth=`date '+%m'`
-nday=`date '+%d'`
+ndate=`date '+%Y|%m|%d'`
 
 # get number day
-numberday=$(getNumberDay "${nyear}" "${nmonth}" "${nday}")
+numberday=$(getNumberDay "${ndate}")
 
 # apply n shift days
 numberday=$((numberday+(days)))
