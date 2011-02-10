@@ -1,5 +1,86 @@
 TO-DO
 =====
-* [20101215] Remplazar el proceso con el cual se calcula la fecha con -d ya que al iterativo en tiempo grandes consume mucho tiempo.
 
-* [20101215] Cambiar parámetros de entrada.
+ Wed, 9 Feb 2011 15:49:45 -0600 
+ FIX: Cambia la forma en que se reciben parametros en las funciones       asi como se arreglo bug al evaluar expresiones usando BC 
+ by Andres Aquino <aquino@hp.com>
+
+ Wed, 9 Feb 2011 11:21:00 -0600 
+ FIX: creo que la palabra reservada funcion no aplica para SH :D 
+ by Andres Aquino <andres.aquino@gmail.com>
+
+ Thu, 16 Dec 2010 11:25:30 -0600 
+ TASK: Actualizar manuales je je je 
+ by Andres Aquino <andres.aquino@gmail.com>
+
+ Thu, 16 Dec 2010 11:25:08 -0600 
+ REVIEW: Correciones traduccion =) 
+ by Andres Aquino <andres.aquino@gmail.com>
+
+ Thu, 16 Dec 2010 11:16:23 -0600 
+ FIX: Siempre olvido cambiar los pinches correos, tendre que preguntar =) 
+ by Andres Aquino <andres.aquino@gmail.com>
+
+ Thu, 16 Dec 2010 11:09:29 -0600 
+ FIX: Se cambio forma que como lee parametros e implemente funciones.. 
+ by Andres Aquino <andres.aquino@gmail.com>
+
+ Thu, 16 Dec 2010 11:08:46 -0600 
+ TASK: eliminar biblioteca, no es funcional solo la usa ydate por el momento 
+ by Andres Aquino <andres.aquino@gmail.com>
+
+ Wed, 15 Dec 2010 18:55:02 -0600 
+ OTHER: Cambiar la forma en el que se aceptan los parámetros 
+ by Daniel Gonzalez <dagonzalv@gmail.com>
+
+ Wed, 15 Dec 2010 18:46:20 -0600 
+ OTHER: Se agrego licencia BSD, opensource carajo! 
+ by Andres Aquino <andres.aquino@gmail.com>
+
+ Wed, 15 Dec 2010 18:40:05 -0600 
+ TASK: Se agrega documentacion, seria bueno traducirla =) 
+ by Andres Aquino <andres.aquino@gmail.com>
+
+ Wed, 15 Dec 2010 18:39:17 -0600 
+ FIX: se agrega la llamada a las funciones, se brinca la parte anterior 
+ by Andres Aquino <andres.aquino@gmail.com>
+
+ Wed, 15 Dec 2010 18:38:41 -0600 
+ TASK: se implementa como biblioteca, se renombra archivo. Incluye dos funciones 
+ by Andres Aquino <andres.aquino@gmail.com>
+
+ Wed, 15 Dec 2010 16:10:06 -0600 
+ ENHANCEMENT: Algoritmo para calcular corrimiento de fechas de una manera mas agil 
+ by Andres Aquino <andres.aquino@gmail.com>
+
+ Wed, 15 Dec 2010 16:09:40 -0600 
+ TASK: Documentacion para calculo de fechas 
+ by Andres Aquino <andres.aquino@gmail.com>
+
+ Tue, 14 Dec 2010 19:25:10 -0600 
+ Merge branch 'master' of https://github.com/andresaquino/ydate 
+ by petrohs <petrohs@gmail.com>
+
+ Tue, 14 Dec 2010 18:58:47 -0600 
+ anexo TODO 
+ by petrohs <petrohs@gmail.com>
+
+ Tue, 14 Dec 2010 18:23:21 -0600 
+ TASK: Se agrego archivo .pod para construir un manual usable en Unix (man ydate) 
+ by Andres Aquino <andres.aquino@gmail.com>
+
+ Tue, 14 Dec 2010 18:18:39 -0600 
+ ENHANCEMENT: Hay varias lineas que se pueden optimizar =) 
+ by Andres Aquino <andres.aquino@gmail.com>
+
+ Tue, 14 Dec 2010 11:39:14 -0600 
+ v0.0.2 parametro -d 
+ by petrohs <petrohs@gmail.com>
+
+ Tue, 14 Dec 2010 11:35:34 -0600 
+ Version inicial 
+ by petrohs <petrohs@gmail.com>
+
+ Tue, 14 Dec 2010 11:16:18 -0600 
+ Commit Inicial 
+ by petrohs <petrohs@gmail.com>
