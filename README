@@ -1,3 +1,21 @@
+           _      _       
+   _  _ __| |__ _| |_ ___ 
+  | || / _` / _` |  _/ -_)
+   \_, \__,_\__,_|\__\___|
+   |__/                   
+
+=
+yDate
+
+-
+Instalacion
+
+
+Manual de Usuario
+
+
+Documentacion
+
 Proceso que permite calcular el dia anterior a cuando se esta ejecutando.
 Principalmente para los sistemas unix en que la utileria date no esta actualizada y no tiene dicha funcionalidad.
 
