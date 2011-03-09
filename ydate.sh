@@ -120,7 +120,4 @@ numberday=$((numberday+(days)))
 # and finally, get a date
 getDayOfNumber "${numberday}"
 
-
-# "Compartir es bueno"
-exit 0;
-
+exit 0
